@@ -1,0 +1,28 @@
+StringBuffer :
+StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+StringBuffer is less efficient than StringBuilder.
+StringBuffer was introduced in Java 1.0
+example:
+
+public class BufferTest{  
+    public static void main(String[] args){  
+        StringBuffer buffer=new StringBuffer("hello");  
+        buffer.append("java");  
+        System.out.println(buffer);  
+    }  
+}  
+
+StringBuilder: 
+StringBuilder is non-synchronized i.e. not thread safe. 
+It means two threads can call the methods of StringBuilder simultaneously.
+StringBuilder is more efficient than StringBuffer.
+StringBuilder was introduced in Java 1.5
+
+example:
+public class BuilderTest{  
+    public static void main(String[] args){  
+        StringBuilder builder=new StringBuilder("hello");  
+        builder.append("java");  
+        System.out.println(builder);  
+    }  
+}  
